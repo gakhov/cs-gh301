@@ -22,7 +22,7 @@ run: nbextensions
 
 clean:
 	rm -Rf var/log
-	rm -Rf bin include lib local share etc
+	rm -Rf bin include lib local share etc man
 	rm -Rf develop-eggs eggs *.egg-info
 	rm -Rf src parts build dist
 	rm -Rf .installed.cfg pip-selfcheck.json
