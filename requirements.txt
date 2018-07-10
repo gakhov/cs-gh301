@@ -1,3 +1,4 @@
+fbprophet==0.3.post2
 graphviz==0.8.2
 hide_code==0.5.2
 holidays==0.9.3
