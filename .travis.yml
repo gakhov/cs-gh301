@@ -1,14 +1,17 @@
 language: python
 
+os:
+  - linux
+  - osx
+
 python:
   - "3.4"
   - "3.5"
   - "3.6"
-  - "3.7"
+  - "3.7-dev"
 
 install:
   - make
-  - make install
 
 notifications:
   email: false
