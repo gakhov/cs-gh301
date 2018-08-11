@@ -1,4 +1,4 @@
-.PHONY: run clean
+.PHONY: run clean test
 
 SHELL = /bin/bash
 
@@ -6,7 +6,7 @@ default: bin/python3
 
 bin/python3:
 	virtualenv . -p python3 --no-site-packages
-	bin/pip3 install --upgrade pip wheel
+	bin/pip3 install --upgrade pip wheel pytest
 	bin/pip3 install wheel Cython==0.28.5 numpy
 	bin/pip3 install -r requirements.txt
 
@@ -19,6 +19,8 @@ nbextensions:
 run: nbextensions
 	bin/jupyter-notebook
 
+test:
+	bin/py.test -m 'not ignore' tests
 
 clean:
 	rm -Rf .Python

@@ -11,6 +11,10 @@ python:
 
 install:
   - make
+  - bin/pip3 install pytest-random-order
+
+script:
+  - PYTHONPATH=$PWD:$PYTHONPATH bin/py.test -m 'not ignore' --random-order-bucket=global tests
 
 notifications:
   email: false
