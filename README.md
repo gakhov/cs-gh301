@@ -21,12 +21,12 @@ You will see, there is nothing complex in understanding and forecasting time ser
 
 ### Datasets
 
-*  https://github.com/gakhov/pycon-ua-2018/tree/master/data/
+*  https://github.com/gakhov/cs-gh301/tree/master/cs-gh301/data/
 
 
 ### Dependencies
 
-* Python 3.3+ (http://python.org/download/)
+* Python 3.4, 3.5, 3.6 (http://python.org/download/)
 
 
 ### Install with pip

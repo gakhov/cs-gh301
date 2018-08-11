@@ -6,8 +6,8 @@ default: bin/python3
 
 bin/python3:
 	virtualenv . -p python3 --no-site-packages
-	bin/pip3 install --upgrade pip
-	bin/pip3 install wheel
+	bin/pip3 install --upgrade pip wheel
+	bin/pip3 install wheel Cython==0.28.5 numpy
 	bin/pip3 install -r requirements.txt
 
 nbextensions:
@@ -21,6 +21,7 @@ run: nbextensions
 
 
 clean:
+	rm -Rf .Python
 	rm -Rf var/log
 	rm -Rf bin include lib local share etc man
 	rm -Rf develop-eggs eggs *.egg-info
